@@ -98,7 +98,7 @@ function generateMarkdown({ name, link, gitName, email, title, description, solv
   - [Credits](#credits)
   - [License](#license)
 
-  ### **Installation**
+  ## **Installation**
   
   ${install}
 
