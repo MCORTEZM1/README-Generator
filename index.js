@@ -1,11 +1,26 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require('./utils/generateMarkdown');
+const generateReadMe = require('./utils/generateMarkdown');
+const { rejects } = require('assert');
 
 
 // TODO: Create an array of questions for user input
 const questions = [
+    {
+        type: 'input',
+        name: 'name',
+        message: 'Please enter your name for credits. (Required)',
+        validate: userName => {
+            if (userName){
+                return true;
+            }
+            else {
+                console.log('Please enter your name!');
+                return false; 
+            }
+        }
+    },
     {
         type: 'input',
         name: 'gitName',
@@ -38,6 +53,11 @@ const questions = [
                 return false;
             }
         }
+    },
+    {
+        type: 'input',
+        name: 'link',
+        message: 'Please provide a link to the GitHub repository for the project',
     },
     {
         type: 'input',
@@ -99,23 +119,38 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    return fs.writeFile(fileName, data, err =>{
-        if (err) throw err;
-    });
+    console.log(fileName);
+
+    return new Promise((resolve, reject) =>{
+        fs.writeFile('./dist/README.md', data, err =>{
+            if (err){
+                reject(err);
+                return;
+            } 
+            resolve({
+                ok: true,
+                message: 'File created!'
+            });
+        });
+    })
+        
 };
 
 // TODO: Create a function to initialize app
 // calling async before a function makes the promisifies the function and makes it asynchronous.
-// Additionally, this will allow you to use the await keyword within the function. 
 async function init() {
-    const responses = await inquirer.prompt(questions);
-    console.log(responses)
-
-    c
+    return inquirer.prompt(questions); 
 };
 
 
 // Function call to initialize app
 init()
- 
-
+    .then(readMeData => {    
+        return generateReadMe(readMeData);
+    })
+    .then(readMeTemplate =>{
+        return writeToFile('README.md', readMeTemplate)
+    })
+    .catch(err =>{
+        console.log(err);
+    });
