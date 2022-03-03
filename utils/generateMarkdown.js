@@ -67,7 +67,7 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (license !== '') {
     return `
-  ### **License**
+  ## **License**
 
   ${renderLicenseBadge(license)}
 
@@ -103,12 +103,12 @@ function generateMarkdown({ name, link, gitName, email, title, description, solv
   ${install}
 
 
-  ### **Usage**
+  ## **Usage**
 
   ${usage}
 
 
-  ### **Credits** 
+  ## **Credits** 
 
   This project was built by ${name} ${generateCollab(credit)}
 
@@ -116,7 +116,7 @@ function generateMarkdown({ name, link, gitName, email, title, description, solv
   ${renderLicenseSection(license)}
 
 
-  ### **How to Contribute**
+  ## **How to Contribute**
 
   If you would like to add contribute to the project, feel free to fork from GitHub @${gitName} 
   Or click here: ${link}
@@ -142,7 +142,7 @@ function generateCollab(credit) {
 
 function generateTests(tests) {
   if (tests !== '') {
-    return `### **Tests**
+    return `## **Tests**
 
   ${tests}
   `}
