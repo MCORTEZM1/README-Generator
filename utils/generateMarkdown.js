@@ -118,10 +118,10 @@ function generateMarkdown({ name, link, gitName, email, title, description, solv
 
   ## **How to Contribute**
 
-  If you would like to add contribute to the project, feel free to fork from GitHub @${gitName} 
+  If you would like to add/contribute to the project, feel free to fork from GitHub @${gitName} 
   Or click here: ${link}
 
-  ## **Contact Me**
+  ## **Questions / Contact Me**
 
   Please reach out with any questions or concerns directly to: ${email}
 
