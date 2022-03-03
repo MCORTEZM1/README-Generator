@@ -19,7 +19,7 @@
   - [Credits](#credits)
   - [License](#license)
 
-  ### **Installation**
+  ## **Installation**
   
   Please visit my GitHub Repo and clone the code into your local machine. Open the code in a code editor, such as VS Code. Then `npm i` to install all dependencies. Finally, run the app in the terminal using `node index.js`. You will be prompted by a series of questions and responses to include in the README. Once complete, view your new README in the dist folder of the application. 
 
