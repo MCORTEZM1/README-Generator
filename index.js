@@ -86,7 +86,7 @@ const questions = [
         type: 'checkbox',
         name: 'languages',
         message: 'What did you build this project with? (Check all that apply)',
-        choices: ['JavaScript', 'HTML', 'CSS', 'ES6', 'jQuery', 'bootstrap', 'Node']
+        choices: ['JavaScript', 'HTML', 'CSS', 'ES6', 'jQuery', 'bootstrap', 'Node', 'Express.js', 'SQL', 'Heroku']
     },
     {
         type: 'input',

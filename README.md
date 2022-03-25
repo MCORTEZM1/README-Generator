@@ -1,9 +1,6 @@
 
   # README-Generator
 
-  link to video: https://drive.google.com/file/d/1iSC6toqwqQ_ibNyvPvD3Uhu4pGdNxUoA/view
-
-
 
   ## **Description**
    
