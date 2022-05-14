@@ -52,7 +52,7 @@
 
 ## **Tests**
 
-  One test that can be run on the application is to try to skip some of the input requests- you will find that some of the data is required for the application to work. 
+Run the application and test it yourself! You will generate a README file like the one you're reading now! 
   
 
   
