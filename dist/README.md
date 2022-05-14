@@ -1,15 +1,12 @@
 
-  # Employee Tracker CMS
-
-
-  **VIDEO LINK:** https://drive.google.com/file/d/141tx0GyQmykqdsD9BirOFdIuXCwp0djH/view
+  # NeoTech News Blog
 
   ## **Description**
    
-  - Employee tracker CMS is a user friendly organizational content manager system. It helps businesses maintain record of departments, roles, and employee structures- and can even track the utilized budget for each department. The application can be configured to suit any company or corporate team structure, but comes preconfigured for a standard car dealership- including a sales, finance, service, parts, and admin departments. Users can create, view, update, and delete departments, roles, and add employees. Employees can be tracked by department and by manager to easily keep track of team structures in a single database. 
-  - This application was written using JavaScript, ES6, Node
-  - Employee Tracker CMS solves the problem of team management and organization, while making it easy for the user to track and update departments, roles, and employees. 
-  - Creating this application increased my foundational understanding of JavaScript overall, while also introducing new skills such as creating a database and server and preparing them for front-end delivery. 
+  - NeoTech News Blog is a CMS-style blog site where users can create an account to create posts and comment on posted articles. The site makes it easy for users to stay up-to-date with the latest technological news!
+  - This application was written using JavaScript, HTML, CSS, ES6, bootstrap, Node, Express.js, SQL, Heroku
+  - The motivation behind NeoTech Blog was the need to stay up-to-date with current tech news and converse with other's who are interested in the same topics.
+  - While building this site, I honed my familiarity with SQL databases using full Javascript and creating applications following the Model-View-Controller paradigm.
 
   ## **Table of Contents** 
   
@@ -20,12 +17,12 @@
 
   ## **Installation**
   
-  1.) Clone the git repo to your local machine. 2.) Open the download in your favorite code editor. 3.) Run `npm i` to install all of the dependencies. 4.) Run the application using `node app` to start the application. 
+  The site is available live at: https://neotechblog.herokuapp.com/. Additionally, you can run the site on your local host by clicking the link to the GitHub repository, cloning the code into your local machine, open your preferred code editor, install dependencies in the CLI with `npm i`, and starting the server with `node start`.
 
 
   ## **Usage**
 
-  Users can download the code and follow the steps above and immediately have access to a car dealership format. Simply follow the prompts to choose how you would like to interact with the application. To change company structure, simply delete the preconfigured departments, roles, and employees to start. Futhermore, the application is prepared for front-end development if a company wishes to take the structure and implement it with a client side interface. API routes are included in the Routes directory and can be accessed by starting a server using `npm start`. 
+  Simply visit the website, create a user account, and you will be able to post, comment and like posts with ease!
 
 
   ## **Credits** 
@@ -45,16 +42,16 @@
   ## **How to Contribute**
 
   If you would like to add/contribute to the project, feel free to fork from GitHub @MCORTEZM1 
-  Or click here: https://github.com/MCORTEZM1/Employee_Tracker
+  Or click here: https://github.com/MCORTEZM1/NeoTech_News
 
   ## **Questions / Contact Me**
 
-  Please reach out with any questions or concerns directly to: MCortezmM@yahoo.com
+  Please reach out with any questions or concerns directly to: mcortezm@yahoo.com
 
 
 ## **Tests**
 
-  Simply start the application and try to add, update, and delete! 
+  Account creation test can be run by clicking 'sign-up', adding your information, and creating posts. 
   
 
   
