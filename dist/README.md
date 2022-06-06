@@ -52,6 +52,3 @@
 ## **Tests**
 
   Account creation test can be run by clicking 'sign-up', adding your information, and creating posts. 
-  
-
-  
